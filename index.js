@@ -26,7 +26,7 @@ async function startBot() {
             const msg = m.messages[0];
             const from = msg.key.remoteJid;
             if (msg.message?.conversation === "!getfile") {
-                await sock.sendMessage(from, { document: { url: "https://raw.githubusercontent.com/YOUR-USERNAME/ashita-bot/main/config.txt" }, fileName: "config.txt" });
+                await sock.sendMessage(from, { document: { url: "https://raw.githubusercontent.com/arashpjr/CYBER-FALL_Bot/main/config.txt" }, fileName: "config.txt" });
             }
         }
     });
